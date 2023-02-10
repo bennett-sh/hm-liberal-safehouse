@@ -1,9 +1,10 @@
 {
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"id": "bsh.liberal-safehouse",
 	"name": "Free Safehouse",
 	"contentFolders": ["content"],
 	"description": "The safehouse is now liberal and allows shooting and more",
 	"authors": ["BSh"],
-	"frameworkVersion": "2.12.4"
+	"frameworkVersion": "2.12.4",
+	"updateCheck": "https://github.com/bennett-sh/hm-shoot-in-safehouse/releases/latest/download/updates.json"
 }
