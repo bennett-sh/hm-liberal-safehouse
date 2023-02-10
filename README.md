@@ -1,3 +1,3 @@
 # Liberal Safehouse
 
-### The safehouse is now liberal and allows shooting and more
+#### The safehouse is now liberal and allows shooting and more
