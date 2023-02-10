@@ -1,5 +1,5 @@
 {
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"id": "bsh.liberal-safehouse",
 	"name": "Liberal Safehouse",
 	"contentFolders": ["content"],
@@ -10,8 +10,8 @@
 			"name": "Limit Ammo",
 			"tooltip": "Use this option to disable the default infinite ammo mod in the safehouse.",
 			"contentFolders": ["limited-ammo"],
-      "type": "checkbox",
-      "enabledByDefault": true
+			"type": "checkbox",
+			"enabledByDefault": true
 		}
 	],
 	"frameworkVersion": "2.12.4",
