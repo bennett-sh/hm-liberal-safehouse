@@ -1,0 +1,13 @@
+{
+	"tempHash": "00A9B93A825F5BDC",
+	"tbluHash": "005BA5CA6AC00627",
+	"patch": [
+		{
+			"SubEntityOperation": [
+				"547626b5eeabc203",
+				{ "SetPropertyValue": { "property_name": "m_bLimitedAmmo", "value": true } }
+			]
+		}
+	],
+	"patchVersion": 6
+}
