@@ -1,8 +1,9 @@
 {
 	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Incredible Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
+	"id": "bsh.liberal-safehouse",
+	"name": "Free Safehouse",
+	"contentFolders": ["content"],
+	"description": "The safehouse is now liberal and allows shooting and more",
+	"authors": ["BSh"],
 	"frameworkVersion": "2.12.4"
 }
