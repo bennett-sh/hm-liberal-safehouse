@@ -1,41 +1,88 @@
 {
-	"tempHash": "00A9B93A825F5BDC",
-	"tbluHash": "005BA5CA6AC00627",
-	"patch": [
-		{
-			"SubEntityOperation": [
-				"e07c81c25ad49639",
-				{ "SetPropertyValue": { "property_name": "m_bBlindFire", "value": true } }
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"e07c81c25ad49639",
-				{ "SetPropertyValue": { "property_name": "m_bHairTrigger", "value": true } }
-			]
-		},
-		{
-			"SubEntityOperation": ["e07c81c25ad49639", { "SetPropertyValue": { "property_name": "m_bFire", "value": true } }]
-		},
-		{
-			"SubEntityOperation": [
-				"6dc8b9e643da837f",
-				{ "SetPropertyValue": { "property_name": "m_bPickupItem", "value": true } }
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"547626b5eeabc203",
-				{ "SetPropertyValue": { "property_name": "m_bThrowItem", "value": true } }
-			]
-		},
-		{
-			"SubEntityOperation": [
-				"547626b5eeabc203",
-				{ "SetPropertyValue": { "property_name": "m_bPlaceItem", "value": true } }
-			]
-		},
-		{ "SubEntityOperation": ["901665526a9ff11c", { "SetPropertyValue": { "property_name": "m_bAim", "value": true } }] }
-	],
-	"patchVersion": 6
+  "$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/entity-patch-schema.json",
+  "tempHash": "00A9B93A825F5BDC",
+  "tbluHash": "005BA5CA6AC00627",
+  "patch": [
+    { "RemoveEntityByID": "901665526a9ff11c" },
+    { "RemoveEntityByID": "e07c81c25ad49639" },
+    { "RemoveEntityByID": "975b7045061419a5" },
+    {
+      "SubEntityOperation": [
+        "21b00c44646306c",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnTrue"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "21b00c44646306c",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnFalse"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "80a351216ee45b53",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnTrue"
+        }
+      ]
+    },
+    {
+      "SubEntityOperation": [
+        "80a351216ee45b53",
+        {
+          "RemoveAllEventConnectionsForEvent": "OnFalse"
+        }
+      ]
+    },
+    {
+      "AddEntity": [
+        "faab6d10be265214",
+        {
+          "parent": "3c56a51359c4434",
+          "factory": "[modules:/zhm5cripplebox.class].pc_entitytype",
+          "blueprint": "[modules:/zhm5cripplebox.class].pc_entityblueprint",
+          "name": "Liberal Freelancer Cripple",
+          "properties": {
+            "m_bAim": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bBlindFire": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bActivateOnStart": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bFire": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bLimitedAmmo": {
+              "type": "bool",
+              "value": false
+            },
+            "m_bPlaceItem": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bPickupItem": {
+              "type": "bool",
+              "value": true
+            },
+            "m_bThrowItem": {
+              "type": "bool",
+              "value": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "patchVersion": 6
 }
